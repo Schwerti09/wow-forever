@@ -1,0 +1,21 @@
+body {
+  background: #0b1220;
+}
+
+:root {
+  --background: #0b1220;
+  --background-soft: #0f1828;
+  --surface: #151f2e;
+  --surface-alt: #1d2d42;
+  --paper: #d8c39a;
+  --gold: #d7b26a;
+  --gold-soft: #e5c98b;
+  --copper: #b87946;
+  --ember: #d7663d;
+  --steel: #557186;
+  --stone: #7b6d5a;
+  --text: #f0e7d3;
+  --muted: #b9b0a0;
+  --border: rgba(215, 178, 106, 0.35);
+  --shadow: rgba(0, 0, 0, 0.38);
+}
