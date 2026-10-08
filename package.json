@@ -1,0 +1,24 @@
+{
+  "name": "wow-forever",
+  "version": "0.0.1",
+  "description": "Lagerfeuer — Deutschsprachige WoW-Forever Fan-Plattform",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.0.0",
+  "workspaces": [
+    "artifacts/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @workspace/lagerfeuer dev",
+    "build": "pnpm --filter @workspace/api-server build && pnpm --filter @workspace/lagerfeuer build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.9.0"
+  }
+}
